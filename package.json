@@ -4,5 +4,21 @@
   "main": "index.js",
   "repository": "https://github.com/gunobre/chat-backend.git",
   "author": "Gustavo Alexandre Nobre Mesquita <gustavoalexandredev@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "tsnd --respawn --transpile-only --quiet index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "ioredis": "^4.28.2",
+    "socket.io": "^4.4.0",
+    "typescript": "^4.6.0-dev.20211214"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.13",
+    "ts-node": "^10.4.0"
+  },
+  "optionalDependencies": {
+    "ts-node-dev": "^1.1.8"
+  }
 }
